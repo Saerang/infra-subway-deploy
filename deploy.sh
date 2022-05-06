@@ -73,7 +73,7 @@ function startServer() {
     echo -e "> JAR Name: $JAR_NAME"
 
     echo -e "java -Dspring.profiles.active=${PROFILE} -jar ${REPOSITORY}/build/libs/${JAR_NAME} 1> ~/spring.log 2>&1 &"
-    java -Dspring.profiles.active=${PROFILE} -jar ${REPOSITORY}/build/lib/${JAR_NAME} 1> ~/spring.log 2>&1 &
+    java -Dspring.profiles.active=${PROFILE} -jar ${REPOSITORY}/build/libs/${JAR_NAME} 1> ~/spring.log 2>&1 &
     echo -e "${txtylw}=======================================${txtrst}"
 }
 
